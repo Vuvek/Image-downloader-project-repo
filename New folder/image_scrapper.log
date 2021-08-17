@@ -1,0 +1,40 @@
+2021-08-17 05:24:14,806 root INFO 
+
+-----------------  Cassandra_DB Log Started --------------------
+
+
+2021-08-17 05:24:17,656 cassandra.cluster WARNING Downgrading core protocol version from 66 to 65 for cf860718-d805-4bc5-89ed-c7aab5ccac7d-us-east-1.db.astra.datastax.com:29042:79398acd-018b-417b-b3fe-4914f0b9ac90. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-08-17 05:24:19,196 cassandra.cluster WARNING Downgrading core protocol version from 65 to 5 for cf860718-d805-4bc5-89ed-c7aab5ccac7d-us-east-1.db.astra.datastax.com:29042:79398acd-018b-417b-b3fe-4914f0b9ac90. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-08-17 05:24:20,759 cassandra.connection ERROR Closing connection <AsyncoreConnection(1472229404568) cf860718-d805-4bc5-89ed-c7aab5ccac7d-us-east-1.db.astra.datastax.com:29042:79398acd-018b-417b-b3fe-4914f0b9ac90> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2021-08-17 05:24:20,760 cassandra.cluster WARNING Downgrading core protocol version from 5 to 4 for cf860718-d805-4bc5-89ed-c7aab5ccac7d-us-east-1.db.astra.datastax.com:29042:79398acd-018b-417b-b3fe-4914f0b9ac90. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2021-08-17 05:24:24,301 cassandra.policies INFO Using datacenter 'us-east-1' for DCAwareRoundRobinPolicy (via host 'cf860718-d805-4bc5-89ed-c7aab5ccac7d-us-east-1.db.astra.datastax.com:29042:79398acd-018b-417b-b3fe-4914f0b9ac90'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2021-08-17 05:24:28,855 root INFO 
+
+-----------------  upload to drive Log Started --------------------
+
+
+2021-08-17 05:24:28,855 root INFO 
+
+-----------------  time_handler log Started --------------------
+
+
+2021-08-17 05:24:28,861 werkzeug INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-17 05:24:30,749 root INFO 
+
+-----------------  API log Started --------------------
+
+
+2021-08-17 05:24:30,757 *********************** API_Logger ************************* INFO Error Occurred in home during calling Login web page
+2021-08-17 05:24:30,757 api ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Rana\Anaconda3\envs\Advance Image Downloader\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Rana\Anaconda3\envs\Advance Image Downloader\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Rana\Anaconda3\envs\Advance Image Downloader\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Rana\Anaconda3\envs\Advance Image Downloader\lib\site-packages\flask\app.py", line 2098, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2021-08-17 05:24:30,821 werkzeug INFO 127.0.0.1 - - [17/Aug/2021 05:24:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2021-08-17 05:24:30,932 werkzeug INFO 127.0.0.1 - - [17/Aug/2021 05:24:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
