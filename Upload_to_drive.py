@@ -97,7 +97,7 @@ class Configure_After_Scrapping_Images:
         :return:dictionary
         """
         try:
-            headers = {"Authorization": "Bearer ya29.a0ARrdaM-M3Bcoa8Ii6G02EtzGXREMtBuKRdAbrTpR12iXOcbIVwztY0WcAujuvVhgKA3_zzq7E7VCAPsKN9ya0YOBr8z4s4RbThkLayoZIqR6k71Sq5G8sJmfqmS3DDB_YF14-Rq9ycaNmcsaDES4FOxHX0lu"}
+            headers = {"Authorization": "Bearer ya29.A0ARrdaM_dN1dETk3L9Xm4hysKx_HX0-dybAthZzGDNdESAYQkQuiw5q0KBgFu_jCPLv03nOaEox44NLEt5BX8SH5dFiIuZpURwzraudrek4kxfpodjTUjqEutcnLLZZfI6T-DSfsGOD_l42aA3aDPQZNIYBgZ"}
             para = {
                 "name": file_name,
                 "parents": ["1OfoFYiXPF1_rqX-UQ14vBivmW3MhWzyu"]
