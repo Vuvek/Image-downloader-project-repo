@@ -5,10 +5,10 @@ from logg import *
 from datetime import datetime , timedelta
 
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route('/')
+@application.route('/')
 def home():
     """
     fuction to show the user first web page
@@ -25,7 +25,7 @@ def home():
         logger.info("Error Occurred in home during calling Login web page")
 
 
-@app.route('/download',methods = ['GET','POST'])
+@application.route('/download',methods = ['GET','POST'])
 def download():
     """
     function to get and post request from the web page
@@ -55,7 +55,7 @@ def download():
 
 
 if __name__ == '__main__':
-    app.run()
+    application.run()
 
 
 
