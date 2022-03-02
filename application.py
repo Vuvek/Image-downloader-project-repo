@@ -1,8 +1,10 @@
 from flask import Flask,render_template,request
+'''
 from time_handler import Timer_object
 import  threading as th
 from logg import *
 from datetime import datetime , timedelta
+'''
 
 
 application = Flask(__name__)
@@ -16,13 +18,14 @@ def home():
     :return: index.html
     """
 
-    log = Logger("*********************** API_Logger *************************")
-    log.logging_info("-----------------  API log Started --------------------")
-    logger = log.api()
+    #log = Logger("*********************** API_Logger *************************")
+    #log.logging_info("-----------------  API log Started --------------------")
+    #logger = log.api()
     try:
         return render_template("index.html")
     except Exception as e:
-        logger.info("Error Occurred in home during calling Login web page")
+        #logger.info("Error Occurred in home during calling Login web page")
+        pass
 
 
 @application.route('/download',methods = ['GET','POST'])
